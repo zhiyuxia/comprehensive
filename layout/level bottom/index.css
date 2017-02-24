@@ -1,0 +1,9 @@
+*{margin:0;padding:0;}
+.layout{width:500px;height:300px;margin-top:220px;margin-left:100px;}
+.layout>div{width:100px;}
+.layout div:nth-child(1){background:#006699;height:100%;}
+.layout div:nth-child(2){background:#990000;height:60%;}
+.layout div:nth-child(3){background:#009900;height:40%;}
+.layout div:nth-child(4){background:#009999;height:80%;}
+.layout{font-size:0;}
+.layout>div{display:inline-block;}
