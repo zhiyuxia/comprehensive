@@ -1,0 +1,4 @@
+/* 方法3 */
+.clearfix:after{content:"";display:block;clear:both;}
+.box1,.box2{margin-bottom:10px;}
+.a1,.a2,.a3,.a4{float:left;background:#009999;width:100px;height:100px;margin-right:10px;}
