@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <style>
+        .slide{
+          background:#B8D7F0;
+          height:100px;
+          width:200px;
+          position:relative;
+        }
+        .pointer{
+          position:absolute;
+          right:50%;
+          transform:translateX(50%);
+          bottom:10px;
+          width:45px;
+        }
+        .pointer::after{
+          content:";
+          display:block;
+          clear:both;"
+        }
+        .pointer i{
+          width:10px;
+          height:10px;
+          background:#010202;
+          border-radius:10px;
+          float:left;
+          margin-left:5px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="slide">
+        <div class="pointer">
+          <i></i><i></i><i></i>
+        </div>
+      </div>
+    </body>
+    </html>
