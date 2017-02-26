@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* 注意利用这三栏共同的box来设置padding, */
+    /* 利用了position中的relative; */
+    .left{background:red;width:100px;margin-left:-100%;position:relative;left:-110px;}
+    .right{background:blue;width:100px;margin-left:-100px;position:relative;right:-110px;}
+    .main{background:yellow;height:200px;width:100%;}
+    .main,.left,.right{float:left;}
+    .box{padding:0 110px;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="main">main main main main main main main main </div>
+    <div class="left">left left left left left left left left left </div>
+    <div class="right">right right right right right right right </div>
+  </div>
+</body>
+</html>

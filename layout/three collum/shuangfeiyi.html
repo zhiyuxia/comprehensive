@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    /* 圣杯在于利用parent的padding来留出空白,双飞翼在于利用带背景颜色的元素的margi */
+    /* n来留出空白,使用的注意点是要利用负的margin元素要float,另外width:100%后,就不能在 */
+    /* 加margin否则会有溢出. */
+    .left{background:red;}
+    .right{background:blue;}
+    .main{height:300px;height:433px;}
+    .left{float:left;width:100px;}
+    .right{float:right;width:100px;}
+    .wrap{background:yellow;height:433px;margin-left:110px;margin-right:110px;}
+  </style>
+</head>
+<body>
+  <div class="left">left left left left left left left left left </div>
+  <div class="right">right right right right rit right </div>
+  <div class="main"><div class="wrap">main main main main main main main main</div> </div>
+  
+</body>
+</html>
