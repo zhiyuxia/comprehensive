@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    html{height:100%;}
+    body{height:100%;}
+    .parent{background:red;height:100%;}
+    .child{background:blue;}
+    /* 方法1 */
+    /* .parent的高度改成height:100%不起作用; */
+    /* .parent{height:100px;} */
+    /* .parent{display:table-cell;vertical-align:middle;} */
+    /* 方法二 */
+    /* .child{position:absolute;top:50%;transform:translateY(-50%);} */
+    /* 方法三 */
+    /* .parent{display:flex;align-items:center;} */
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">123
+      123 123 123 123 123 123 123 
+    </div>
+  </div>
+</body>
+</html>
