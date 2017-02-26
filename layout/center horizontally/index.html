@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .parent{background:blue;height:100px;}
+    .child{background:red;}
+    /* 方法1 */
+    /* .parent{text-align:center;} */
+    /* .child{display:inline-block;} */
+
+    /* 方法2 */
+    /* 注意作用在child上 */
+    /* .child{display:table;margin:0 auto;} */
+    /* 方法3 
+    此方法parent要设置Height否则高度为零.另外parent的relative可以省略 
+     */
+    /* .parent{height:50px;} */
+    /* .parent{position:relative;} */
+    /* .child{position:absolute;left:50%;transform:translateX(-50%);} */
+      /* 方法4 */
+    /* flex中的iterm是内容的宽度 */
+    .parent{display:flex;justify-content:center;} 
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child">1233
+    1233 1233 1233 1233 1233 
+  </div>
+</body>
+</html>
